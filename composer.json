@@ -1,0 +1,21 @@
+{
+  "name": "davidnadejdin/tinkoff-php-client",
+  "description": "Api client for Tinkoff oplata",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "davidnadejdin",
+      "email": "davidnadejdin@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "guzzlehttp/guzzle-services": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Davidnadejdin\\TinkoffClient\\": "src/"
+    }
+  }
+}
