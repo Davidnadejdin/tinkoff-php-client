@@ -13,6 +13,7 @@ use GuzzleHttp\Command\Guzzle\Description;
  * @method finishAuthorize(array $params)
  * @method confirm(array $params)
  * @method cancel(array $params)
+ * @method charge(array $params)
  * @method getState(array $params)
  * @method resend(array $params)
  * @method submit3DSAuthorization(array $params)

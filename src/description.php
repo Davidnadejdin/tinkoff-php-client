@@ -341,6 +341,48 @@ return [
                 ],
             ],
         ],
+        'charge' => [
+            'httpMethod' => 'POST',
+            'uri' => '/Charge',
+            'responseModel' => 'Result',
+            'parameters' => [
+                'TerminalKey' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'formParam',
+                ],
+                'PaymentId' => [
+                    'required' => true,
+                    'type' => 'numeric',
+                    'location' => 'formParam',
+                ],
+                'RebillId' => [
+                    'required' => true,
+                    'type' => 'numeric',
+                    'location' => 'formParam',
+                ],
+                'SendEmail' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'formParam',
+                ],
+                'InfoEmail' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'formParam',
+                ],
+                'IP' => [
+                    'required' => false,
+                    'type' => 'string',
+                    'location' => 'formParam',
+                ],
+                'Token' => [
+                    'required' => true,
+                    'type' => 'string',
+                    'location' => 'formParam',
+                ],
+            ],
+        ],
     ],
     'models' => [
         'Result' => [
